@@ -1,0 +1,6 @@
+{
+    "marktplatz" : {
+        "cookies" : "//*[@id='onetrust-accept-btn-handler']",
+        "first_name" : "//input[@id = 'firstname']"
+    }
+}
