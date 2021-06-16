@@ -2,5 +2,15 @@
     "marktplatz" : {
         "cookies" : "//*[@id='onetrust-accept-btn-handler']",
         "first_name" : "//input[@id = 'firstname']"
+    },
+    "golocal" : {
+        "cookies" : "//*[@id='cmpbntyestxt']",
+        "registration" : "/html/body/header/div[2]/div[2]/div[1]/ul/li[1]/a/strong",
+        "register_per_email" : "//*[@id='mainWrapper']/div/div[2]/div/div/div[1]/div/button[1]",
+        "email" : "//*[@id='newUser_email']",
+        "user_name" : "//*[@id='newUser_loginname']",
+        "password" : "//*[@id='newUser_password']",
+        "repeat_password" : "//*[@id='newUser_confirmPassword']",
+        "place_name" : "//*[@id='txtLocalityFilter']"
     }
 }

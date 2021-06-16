@@ -10,5 +10,13 @@
         "first_name_data" : "Baap",
         "report" : true,
         "email_trigger" : true
+    },
+    "golocal" : {
+        "name" : "https://www.golocal.de/",
+        "email" : "mymail.com",
+        "user_name" : "I am not a user.",
+        "password" : "I don't know",
+        "repeat_password" : "Yes, I don't know",
+        "place_name" : "pan India"
     }
 }

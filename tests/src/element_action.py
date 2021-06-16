@@ -9,16 +9,20 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException, InvalidElementStateException
+from utils.data_utils import DataUtils
 
-class element_action:
 
-    def __init__(self,driver,locator: string, locator_name: string, id=False, name=False, xpath=False, link_text=False, partial_link_text=False, tag_name=False, class_name=False, css_selector=False ):
+
+class Element_Action(object):
+
+    def __init__(self,driver,site_name=None,locator=None, id=False, name=False, xpath=True, link_text=False, partial_link_text=False, tag_name=False, class_name=False, css_selector=False ):
         """
         DocString To Do
         """
         self.driver = driver
-        self.locator = locator
-        self.locator_name = locator_name
+        self.site_name = site_name
+        self.locator_name = locator
+        self.locator = self.loc_from_loc_name()
 
         self.id = id
         self.name = name
@@ -35,8 +39,18 @@ class element_action:
         self.element_map_to_locator = {"id" : By.ID, "XPath" : By.XPATH , "name" : By.NAME, "link_list" : By.LINK_TEXT, 
             "partial_link_test" : By.PARTIAL_LINK_TEXT, "tag_name" : By.TAG_NAME, "class_name" : By.CLASS_NAME, "css_selector" : By.CSS_SELECTOR}
 
-        self.final_element
+        self.final_element = None
         self.final_locator = self.find_locator()
+
+    def loc_from_loc_name(self):
+        _loc = DataUtils.data_navigator(self,self.site_name)
+        return _loc[self.locator_name]
+
+    def fill(self):
+        _site = DataUtils.site_map_data(self,self.site_name)
+        
+        text = _site[self.locator_name]
+        self.send_keys(text)
 
     def element_finder(self):
         for key in self.element_value.keys():
@@ -53,7 +67,7 @@ class element_action:
         """This Function will click on a web elemen"""
 
         try:
-            self.driver.find_element(self.final_locator, self.locator_value).click()
+            self.driver.find_element(self.final_locator, self.locator).click()
 
         except Exception as e : 
             print(e)
@@ -63,9 +77,10 @@ class element_action:
         """This Function will send keys to a web elemen
         """
 
+
         try:
-            self.driver.find_element(self.final_locator, self.locator_value).clear()
-            self.driver.find_element(self.final_locator, self.locator_value).send_keys(text)
+            self.driver.find_element(self.final_locator, self.locator).clear()
+            self.driver.find_element(self.final_locator, self.locator).send_keys(text)
 
         except Exception as e : 
             print(e)
@@ -77,7 +92,7 @@ class element_action:
 
         try:
             web_driver_wait = WebDriverWait(self.driver , 10)
-            web_driver_wait.until(EC.presence_of_element_located((self.final_locator, self.locator_value)))
+            web_driver_wait.until(EC.presence_of_element_located((self.final_locator, self.locator)))
 
         except Exception as e : 
             print(e)
@@ -87,7 +102,7 @@ class element_action:
         """
         try:
             web_driver_wait = WebDriverWait(self.driver , 10)
-            web_driver_wait.until(EC.element_to_be_clickable((self.final_locator, self.locator_value)))
+            web_driver_wait.until(EC.element_to_be_clickable((self.final_locator, self.locator)))
 
         except Exception as e : 
             print(e)
@@ -96,7 +111,7 @@ class element_action:
         """This Function will select from dropdown using visible text
         """
         try:
-            select = Select(self.driver.find_element(self.final_locator, self.locator_value))
+            select = Select(self.driver.find_element(self.final_locator, self.locator))
             select.select_by_visible_text(visible_text)
 
         except Exception as e : 
@@ -106,7 +121,7 @@ class element_action:
         """This Function will select from dropdown using value
         """
         try:
-            select = Select(self.driver.find_element(self.final_locator, self.locator_value))
+            select = Select(self.driver.find_element(self.final_locator, self.locator))
             select.select_by_value(select_value)
 
             
@@ -117,7 +132,7 @@ class element_action:
 
     def is_element_present(self):
         try:
-            if (self.driver.find_element(self.final_locator, self.locator_value)):
+            if (self.driver.find_element(self.final_locator, self.locator)):
                 return True
             
         except NoSuchElementException as e : 
@@ -129,7 +144,7 @@ class element_action:
 
     def JS_click(self):
         try:
-            element = self.driver.find_element(self.final_locator, self.locator_value)
+            element = self.driver.find_element(self.final_locator, self.locator)
 
             self.driver.execute_script("arguments[0].click();", element)
 
@@ -138,3 +153,6 @@ class element_action:
 
     def delay():
         time.sleep(randint(2,5))
+
+
+
