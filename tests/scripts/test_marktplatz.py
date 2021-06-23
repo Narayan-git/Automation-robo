@@ -21,8 +21,5 @@ class Testmarktplatz(BaseTest):
 
         self.gui_navigator.open_registration()  ####To do
         
-        self.driver.find_element_by_xpath('//*[@id="container"]/div[1]/div/a[2]').click()
-        sleep(3)
-
 
 

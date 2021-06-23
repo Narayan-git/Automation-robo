@@ -15,14 +15,18 @@ from utils.data_utils import DataUtils
 
 class Element_Action(object):
 
-    def __init__(self,driver,site_name=None,locator=None, id=False, name=False, xpath=True, link_text=False, partial_link_text=False, tag_name=False, class_name=False, css_selector=False ):
+    def __init__(self,driver,site_name=None,locator=None,opt = False, id=False, name=False, xpath=True, link_text=False, partial_link_text=False, tag_name=False, class_name=False, css_selector=False ):
         """
         DocString To Do
         """
         self.driver = driver
         self.site_name = site_name
         self.locator_name = locator
-        self.locator = self.loc_from_loc_name()
+        self.locator_opt = opt
+        if (self.locator_opt):
+            self.locator = self.option()
+        else:
+            self.locator = self.loc_from_loc_name()
 
         self.id = id
         self.name = name
@@ -45,6 +49,17 @@ class Element_Action(object):
     def loc_from_loc_name(self):
         _loc = DataUtils.data_navigator(self,self.site_name)
         return _loc[self.locator_name]
+    
+    def option(self):
+        _site_data_info = DataUtils.site_map_data(self,self.site_name) #male or female
+        _loc_data_value = _site_data_info[self.locator_name]
+
+
+        _loc_locator = DataUtils.data_navigator(self,self.site_name)
+        _loc_locator_opt = _loc_locator[self.locator_name]
+
+        return _loc_locator_opt[_loc_data_value]
+
 
     def fill(self):
         _site = DataUtils.site_map_data(self,self.site_name)
@@ -153,6 +168,7 @@ class Element_Action(object):
 
     def delay():
         time.sleep(randint(2,5))
+
 
 
 

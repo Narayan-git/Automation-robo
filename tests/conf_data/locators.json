@@ -5,12 +5,51 @@
     },
     "golocal" : {
         "cookies" : "//*[@id='cmpbntyestxt']",
-        "registration" : "/html/body/header/div[2]/div[2]/div[1]/ul/li[1]/a/strong",
-        "register_per_email" : "//*[@id='mainWrapper']/div/div[2]/div/div/div[1]/div/button[1]",
+        "registration" : "//STRONG[text()='Jetzt registrieren']/self::STRONG",
+        "register_per_email" : "//BUTTON[@class='button expanded sociallogin__button sociallogin__button--email']/self::BUTTON",
         "email" : "//*[@id='newUser_email']",
         "user_name" : "//*[@id='newUser_loginname']",
         "password" : "//*[@id='newUser_password']",
         "repeat_password" : "//*[@id='newUser_confirmPassword']",
-        "place_name" : "//*[@id='txtLocalityFilter']"
+        "place_name" : "//*[@id='txtLocalityFilter']",
+        "gender" : {
+            "male" : "//*[@id='newUser_salutationcode1']",
+            "female" : ""
+        },
+        "register-and-active" : "//*[@id='btn-miniReg-reg']"
+    },
+    "provenexpert" : {
+        "registration" : "/html/body/div[1]/div/div/div/div[4]/a[2]",
+        "email" : "//INPUT[@id='email']/self::INPUT",
+        "sign_up" : "//SPAN[@class='MuiButton-label']/self::SPAN",
+        "temp" : "//A[@class='peButton ctaRegister small'][text()='Start']/self::A"
+    },
+    "folkd" : {
+        "registration" : "//A[@href='/page/register.html'][text()='Register for free']/self::A",
+        "user_name" : "//INPUT[@id='username']/self::INPUT",
+        "email" : "//INPUT[@id='email']/self::INPUT",
+        "password" : "//INPUT[@id='password']/self::INPUT",
+        "repeat_password" : "//INPUT[@id='passwordagain']/self::INPUT",
+        "captch" : "//*[@id='recaptcha-anchor']/div[1]",
+        "register" : "//INPUT[@id='button_register']/self::INPUT"
+    },
+    "pentaxuser" : {
+        "registration" : "//A[@href='https://www.pentaxuser.com/register'][text()='Sign Up']/self::A",
+        "user_name" : "//INPUT[@id='username']/self::INPUT",
+        "email" : "(//INPUT[@class='form-control'])[6]",
+        "password" : "//INPUT[@id='password']/self::INPUT",
+        "repeat_password" : "(//INPUT[@class='form-control'])[8]",
+        "captch" : "//*[@id='recaptcha-anchor']/div[1]",
+        "register_now" : "//INPUT[@type='submit']/self::INPUT"
+    },
+    "firmenpresse" : {
+        "registration" : "//*[@id='login']/form/a[1]",
+        "user_name" : "(//INPUT[@name='uname']/self::INPUT)",
+        "email" : "//INPUT[@name='email']/self::INPUT",
+        "registration_name" : "//INPUT[@name='realname']/self::INPUT",
+        "password" : "//INPUT[@id='password']/self::INPUT",
+        "repeat_password" : "(//INPUT[@class='form-control'])[8]",
+        "captch" : "//*[@id='recaptcha-anchor']/div[1]",
+        "submit" : "//INPUT[@type='submit']/self::INPUT"
     }
 }

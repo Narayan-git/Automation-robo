@@ -76,14 +76,14 @@ class BaseTest:
         sleep(2)
         self.driver.find_element_by_xpath(self.navigator_data["registration"]).click(),"No registation page found"
 
-    def site_navigator(self,locator=None, id=False, name=False, xpath=True, link_text=False, partial_link_text=False, tag_name=False, class_name=False, css_selector=False):
+    def site_navigator(self,locator=None,opt = False, id=False, name=False, xpath=True, link_text=False, partial_link_text=False, tag_name=False, class_name=False, css_selector=False):
         driver = self.driver
         frame = inspect.stack()[1]
         module = inspect.getmodule(frame[0])
         filename = module.__file__
         site_name = os.path.basename(filename).replace(".py","").split("test_")[1]
         sleep(2)
-        obj = Element_Action(driver,site_name=site_name,locator=locator, id=id, name=name, xpath=xpath, link_text=link_text, partial_link_text=partial_link_text, tag_name=tag_name, class_name=class_name, css_selector=css_selector)
+        obj = Element_Action(driver,site_name=site_name,locator=locator,opt = opt, id=id, name=name, xpath=xpath, link_text=link_text, partial_link_text=partial_link_text, tag_name=tag_name, class_name=class_name, css_selector=css_selector)
         return obj
 
 

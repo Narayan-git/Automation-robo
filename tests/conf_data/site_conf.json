@@ -17,6 +17,34 @@
         "user_name" : "I am not a user.",
         "password" : "I don't know",
         "repeat_password" : "Yes, I don't know",
-        "place_name" : "pan India"
+        "place_name" : "pan India",
+        "gender" : "male"
+    },
+    "provenexpert" : {
+        "name" : "https://www.provenexpert.com",
+        "email" : "baap1@leadpaka.de",
+        "user_name" : "I am not a user."
+    },
+    "folkd" : {
+        "name" : "https://www.folkd.com/",
+        "email" : "mymail.com",
+        "user_name" : "I am not a user.",
+        "password" : "I don't know",
+        "repeat_password" : "Yes, I don't know"
+    },
+    "pentaxuser" : {
+        "name" : "https://www.pentaxuser.com/user/timospecht-369545/activity",
+        "email" : "mymail.com",
+        "user_name" : "I am not a user.",
+        "password" : "I don't know",
+        "repeat_password" : "Yes, I don't know"
+    },
+    "firmenpresse" : {
+        "name" : "https://www.firmenpresse.de/pressinfo1787006/entruempelung-berlin-wir-uebernehmen-das-fuer-sie.html",
+        "email" : "mymail.com",
+        "registration_name" : "jupiter",
+        "user_name" : "I am not a user.",
+        "password" : "I don't know",
+        "repeat_password" : "Yes, I don't know"
     }
 }

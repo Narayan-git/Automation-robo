@@ -1,21 +1,3 @@
-# import selenium
-# from selenium import webdriver
-# import time
-
-# driver = webdriver.Chrome("drivers/chromedriver")
-
-# #open the browser
-# time.sleep(5)
-
-# driver.get("https://web.whatsapp.com/")
-# time.sleep(5)
-
-# element = driver.find_element_by_name("Chuinn")
-# element.click()
-# #/html/body/div[1]/div[1]/div[1]/div[3]/div/div[2]/div[1]/div/div/div[5]/div/div/div[2]/div[1]/div[1]/span/span
-
-# #close the browser
-# #driver.quit()
 
 
 from selenium import webdriver
