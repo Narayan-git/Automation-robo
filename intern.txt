@@ -1,0 +1,92 @@
+date : 18/06/21 
+
+		========== + ======== + ======
+		========== + ======== + ======
+			SUBHASMITA
+		========== + ======== + ======
+		========== + ======== + ======
+https://www.gelbeseiten.de
+
+http://www.uni-protokolle.de/foren/viewt/577535,0.html
+
+https://www.umzugsfirmen-check.de
+
+https://www.meinstartup.com/entruempelung-berlin-wohnungen-bueros-besenrein/
+
+https://www.satellite.me/satellite-startseite/geschaeftsnummer-als-zweite-nummer-auf-dem-handy
+
+https://www.prima-umzuege.de/entruempelung-berlin-was-man-bei-einer-wohnungsaufloesung-beachten-sollte/
+
+
+		========== + ======== + ======
+		========== + ======== + ======
+   			   NARAYAN
+		========== + ======== + ======
+		========== + ======== + ======
+http://www.europages.de/
+
+https://www.webwiki.de/
+
+https://firmeneintrag.dastelefonbuch.de/ [ DONE HALF ]
+
+https://www.saechsische.de/wohnungsaufloesung-in-einer-anderen-stadt-5171421.html [ NO PATH FOUND AT THIS WEB PAGE ]
+
+https://www.unternehmensauskunft.com [ DONE ]
+
+=========================================================================================================================================
+date : 27/06/21
+
+		========== + ======== + ======
+		========== + ======== + ======
+			SUBHASMITA  
+		========== + ======== + ======
+		========== + ======== + ======
+https://www.satellite.me/satellite-startseite/geschaeftsnummer-als-zweite-nummer-auf-dem-handy
+
+https://www.prima-umzuege.de/entruempelung-berlin-was-man-bei-einer-wohnungsaufloesung-beachten-sollte/
+
+https://berlin-sehen.de/tipps-zur-wohnungsaufloesung-oder-haushaltsaufloesung-in-berlin
+
+https://www.11880.com
+
+https://www.xing.com/companies
+
+https://www.dasoertliche.de/Themen/Entr%C3%BCmpelung-Berlin-Berlin-Kreuzberg-Lindenstr
+
+
+		========== + ======== + ======
+		========== + ======== + ======
+			   NARAYAN 
+		========== + ======== + ======
+		========== + ======== + ======
+https://www.dialo.de/firma/dresden/entruempelung-berlin-inh-felix-schulz-tb4869977 [ NEXT PAGE IS NOT WORKING TO GOOGLE RECAPTCHA ]
+
+https://www.wlw.de/de/firma/entruempelung-berlin-inh-felix-schulz-1913457 [ TWO REGISTRATION COMPLITE ]
+
+https://www.brainguide.de/Entruempelung-Berlin#categories [ NO SUCH ELEMENT FOUND ERROR AT ACCEPTING COOKIES ]
+
+https://adresse.dastelefonbuch.de/Berlin/1-Entr%C3%BCmpelungen-Berlin-Berlin-Lindenstr.html [ NEXT ELEMENT IS NOT WORKING PROPERLY]
+
+https://www.openstreetmap.org/node/7739895163  [ DONE ]
+
+http://www.yellowmap.de/Details/OgsSSD5ML2w_WdNWA8liYA==.aspx [ DONE ]
+
+
+https://www.marktplatz-mittelstand.de/Firmeneintrag [ DONT KNOW ]
+	"marktplatz" : {
+        	"name" : "https://www.marktplatz-mittelstand.de/Firmeneintrag",
+        	"first_name_data" : "Baap",
+        	"report" : true,
+        	"email_trigger" : true
+    	},
+
+ 	"marktplatz" : {
+        	"cookies" : "//*[@id='onetrust-accept-btn-handler']",
+        	"first_name" : "//input[@id = 'firstname']"
+    	}
+
+=========================================================================================================================================
+date : 12/07/21
+excel sheet
+complited: 31, 47, 49, 
+uncomplited : 6, 7, 10, 23

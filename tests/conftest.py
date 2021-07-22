@@ -20,7 +20,12 @@ def driver_init(request):
     web_driver = webdriver.Chrome("drivers/chromedriver")
     request.cls.driver = web_driver
     yield
-    #web_driver.close()
+    try:
+        web_driver.close()
+    except:
+        print("Driver Already Closed")
+        pass
+
 
 
 

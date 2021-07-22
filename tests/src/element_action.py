@@ -87,6 +87,15 @@ class Element_Action(object):
         except Exception as e : 
             print(e)
 
+    def clear(self):
+        """This Function will clear on a web element"""
+
+        try:
+            self.driver.find_element(self.final_locator, self.locator).clear()
+
+        except Exception as e :
+            print(e)
+
 
     def send_keys(self,text):
         """This Function will send keys to a web elemen

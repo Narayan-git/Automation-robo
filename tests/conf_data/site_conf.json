@@ -1,78 +1,152 @@
 {
-    "TestBooking" : {
-        "name" : "http://blazedemo.com",
-        "search_item" : "Hye!How are you",
-        "report" : true,
-        "email_trigger" : true
+    "prima": {
+        "name": "https://www.prima-umzuege.de/entruempelung-berlin-was-man-bei-einer-wohnungsaufloesung-beachten-sollte/",
+        "yourname": "subhasmita behera",
+        "email": "testmail@leadpaka.de",
+        "phoneno": "7546546465",
+        "subject": "bike",
+        "loadingpoint": "mumbai",
+        "unloadingpoint": "odisha",
+        "message": "plz deliver as soon as possible"
     },
-    "marktplatz" : {
-        "name" : "https://www.marktplatz-mittelstand.de/Firmeneintrag",
-        "first_name_data" : "Baap",
-        "report" : true,
-        "email_trigger" : true
+    "xing": {
+        "name": "https://www.xing.com/companies",
+        "first_name": "Subhasmita",
+        "last_name": "Behera",
+        "email": "testmail@leadpaka.de",
+        "password": "byte@123",
+        "loginemail": "testmail@leadpaka.de",
+        "loginpassword": "byte@123"
     },
-    "golocal" : {
-        "name" : "https://www.golocal.de/",
-        "email" : "mymail.com",
-        "user_name" : "I am not a user.",
-        "password" : "I don't know",
-        "repeat_password" : "Yes, I don't know",
-        "place_name" : "pan India",
-        "gender" : "male"
+    "dasoertliche": {
+        "name": "https://www.dasoertliche.de/Themen/Entr%C3%BCmpelung-Berlin-Berlin-Kreuzberg-Lindenstr",
+        "companyname": "Byte Solution",
+        "road": "#27,80 Ft road",
+        "houseno": "koramangala 6th block",
+        "postcode": "560068",
+        "place": "bangalore",
+        "prefix": "0",
+        "number": "7873567896",
+        "prefixfax": "080",
+        "fax": "33330003",
+        "website": "www.bytesoln.com",
+        "email": "testmail@leadpaka.de"
     },
-    "provenexpert" : {
-        "name" : "https://www.provenexpert.com",
-        "email" : "baap1@leadpaka.de",
-        "user_name" : "I am not a user."
+    "topsitenet": {
+        "name": "https://topsitenet.com",
+        "display_name": "Byte_123",
+        "email": "testmail@leadpaka.de",
+        "username": "smitasubhh",
+        "password": "Byte@123",
+        "confirmation": "Byte@123"
     },
-    "folkd" : {
-        "name" : "https://www.folkd.com/",
-        "email" : "mymail.com",
-        "user_name" : "I am not a user.",
-        "password" : "I don't know",
-        "repeat_password" : "Yes, I don't know"
+    "hubpages": {
+        "name": "https://hubpages.com/@ruempelexperten",
+        "username": "PeeterBytes",
+        "email": "testmailhub@leadpaka.de",
+        "password": "Byte@123",
+        "reenter_password": "Byte@123"
     },
-    "pentaxuser" : {
-        "name" : "https://www.pentaxuser.com/user/timospecht-369545/activity",
-        "email" : "mymail.com",
-        "user_name" : "I am not a user.",
-        "password" : "I don't know",
-        "repeat_password" : "Yes, I don't know"
+    "yelp": {
+        "name": "https://en.yelp.com.ph/user_details?userid=0AYIyqS9P7HSsQQUDlbheA",
+        "first_name": "subhasmita",
+        "last_name": "behera",
+        "email": "testmail@leadpaka.de",
+        "password": "byte@123",
+        "city": "Balasore",
+        "month": "value2",
+        "day": "value6",
+        "year": "value5"
     },
-    "firmenpresse" : {
-        "name" : "https://www.firmenpresse.de/pressinfo1787006/entruempelung-berlin-wir-uebernehmen-das-fuer-sie.html",
-        "email" : "mymail.com",
-        "registration_name" : "jupiter",
-        "user_name" : "I am not a user.",
-        "password" : "I don't know",
-        "repeat_password" : "Yes, I don't know"
+    "linkarena": {
+        "name": "http://linkarena.com/",
+        "username": "smitasubhh",
+        "email": "testmail@leadpaka.de",
+        "password": "Byte@123",
+        "repassword": "Byte@123",
+        "pin": "756169",
+        "know about": "social media"
+    },
+    "bloglovin": {
+        "name": "https://www.bloglovin.com/",
+        "username": "subhasmita",
+        "email": "testmail@leadpaka.de",
+        "password": "Byte@123"
+    },
+    "webestools": {
+        "name": "http://www.webestools.com/profile-343606.html",
+        "username": "smitasubhh",
+        "password": "Byte@123",
+        "repassword": "Byte@123",
+        "email": "testmail@leadpaka.de"
+    },
+    "TestBooking": {
+        "name": "http://blazedemo.com",
+        "search_item": "Hye!How are you",
+        "report": true,
+        "email_trigger": true
+    },
+    "golocal": {
+        "name": "https://www.golocal.de/",
+        "email": "mymail.com",
+        "user_name": "I am not a user.",
+        "password": "I don't know",
+        "repeat_password": "Yes, I don't know",
+        "place_name": "pan India",
+        "gender": "male"
+    },
+    "provenexpert": {
+        "name": "https://www.provenexpert.com",
+        "email": "baap1@leadpaka.de",
+        "user_name": "I am not a user."
+    },
+    "folkd": {
+        "name": "https://www.folkd.com/",
+        "email": "mymail.com",
+        "user_name": "I am not a user.",
+        "password": "I don't know",
+        "repeat_password": "Yes, I don't know"
+    },
+    "pentaxuser": {
+        "name": "https://www.pentaxuser.com/user/timospecht-369545/activity",
+        "email": "mymail.com",
+        "user_name": "I am not a user.",
+        "password": "I don't know",
+        "repeat_password": "Yes, I don't know"
+    },
+    "firmenpresse": {
+        "name": "https://www.firmenpresse.de/pressinfo1787006/entruempelung-berlin-wir-uebernehmen-das-fuer-sie.html",
+        "email": "mymail.com",
+        "registration_name": "jupiter",
+        "user_name": "I am not a user.",
+        "password": "I don't know",
+        "repeat_password": "Yes, I don't know"
     },
     "europages": {
-        "url": "https://www.europages.de/",
+        "name": "https://www.europages.de/",
         "searchinp": "google",
         "companyName": "Byte Tech Pro Solutions",
         "country": "Germany",
         "district": "Balasore",
         "zip": "20095",
         "edit": "",
-        "webtype": "https: //",
-        "gender": "2",
-        "mrs": "2",
+        "website": "hddfmu.rf.gd",
+        "gender": "female",
         "firstName": "Peter",
         "lastName": "Rabin",
-        "email": "softlezy@gmail.com",
+        "email": "testmail@leadpaka.de",
         "mobile": "784358431",
         "agree": "checked"
     },
     "webwiki": {
-        "url": "https://www.webwiki.de/",
+        "name": "https://www.webwiki.de/",
         "searchinp": "google",
         "domain": "hddfmu.rf.gd",
         "addUrl": "http://hddfmu.rf.gd",
         "category": "Healthcare",
         "title": "health Disease Detect",
         "description": "Detect Diseases Through Symptoms",
-        "email": "softlezy@gmail.com",
+        "email": "testmail@leadpaka.de",
         "operator": "self",
         "address": "Balasore",
         "zip": "756019",
@@ -84,14 +158,22 @@
         "agree": "checked"
     },
     "dastelefonbuch": {
-        "url": "https://firmeneintrag.dastelefonbuch.de/",
-        "searchinp": "google"
+        "name": "https://firmeneintrag.dastelefonbuch.de/",
+        "searchinp": "google",
+        "zip": "20095",
+        "company_name": "Byte Tech Pro Solutions",
+        "street": "Sankt Jakobikirche",
+        "house_number": "253",
+        "contact_type": "Mobil",
+        "phone_number": "+4940428380",
+        "email": "testmail@leadpaka.de",
+        "url": "https://hddfmu.rf.gd/"
     },
     "sachsische": {
-        "url": "https://www.saechsische.de/wohnungsaufloesung-in-einer-anderen-stadt-5171421.html"
+        "name": "https://www.saechsische.de/wohnungsaufloesung-in-einer-anderen-stadt-5171421.html"
     },
     "companyinfo": {
-        "url": "https://www.unternehmensauskunft.com",
+        "name": "https://www.unternehmensauskunft.com",
         "searchinp": "google",
         "freeCompanyName": "Byte Tech Pro Solutions",
         "freeStreet": "Sankt Jakobikirche",
@@ -123,5 +205,214 @@
         "premiumIndustry10": "test 10",
         "baseDesired": "8 Monate",
         "baseDiffAddress": ""
+    },
+    "dialo": {
+        "name": "https://www.dialo.de/firma/dresden/entruempelung-berlin-inh-felix-schulz-tb4869977",
+        "email": "softlezy@gmail.com",
+        "company_name": "Byte Tech Pro Solutions",
+        "street": "Sankt Jakobikirche",
+        "house_number": "253",
+        "zip": "20095",
+        "phone": "+4940428380"
+    },
+    "marktplatz": {
+        "name": "https://www.marktplatz-mittelstand.de",
+        "gender": "male",
+        "first_name": "Peeter",
+        "sur_name": "Rabin",
+        "company_name": "Byte Tech Pro Solutions",
+        "street": "Altstadt",
+        "zip": "20095",
+        "place": "Hamburg",
+        "phone": "+4940428380",
+        "email": "softlezy@gmail.com",
+        "password": "Byte@6"
+    },
+    "umzug": {
+        "name": "https://www.umzugsfirmen-check.de/"
+    },
+    "wlw": {
+        "name": "https://www.wlw.de/de/firma/entruempelung-berlin-inh-felix-schulz-1913457",
+        "company_name": "Byte Tech Pro Solutions",
+        "url": "http://hddfmu.rf.gd",
+        "street": "Altstadt",
+        "house_number": "235",
+        "zip": "20095",
+        "city": "Hamburg",
+        "phone_number": "40428380",
+        "company_email": "testmail@leadpaka.de",
+        "gender": "Herr",
+        "first_name": "Peeter",
+        "last_name": "Rabin",
+        "user_email": "testmail@leadpaka.de",
+        "password": "Abcd@878"
+    },
+    "brainguide": {
+        "name": "https://www.brainguide.de/Entruempelung-Berlin#categories"
+    },
+    "adresse": {
+        "name": "https://adresse.dastelefonbuch.de/Berlin/1-Entr%C3%BCmpelungen-Berlin-Berlin-Lindenstr.html",
+        "zip": "20095",
+        "company_name": "Byte Tech Pro Solutions",
+        "street": "Sankt Jakobikirche",
+        "house_number": "253",
+        "contact_type": "Mobil",
+        "phone_number": "+4940428380",
+        "email": "sodtlezy@gmail.com",
+        "url": "http://hddfmu.rf.gd/"
+    },
+    "openstreetmap": {
+        "name": "https://www.openstreetmap.org/node/7739895163",
+        "email": "nsahu@gmail.com",
+        "email_confirmation": "nsahu@gmail.com",
+        "display_name": "Peter Rabin",
+        "password": "Byte@123",
+        "confirm_password": "Byte@123",
+        "country": "other"
+    },
+    "yellowmap": {
+        "name": "http://www.yellowmap.de/Details/OgsSSD5ML2w_WdNWA8liYA==.aspx",
+        "find_company": "OTTO",
+        "find_city": "Hamburg",
+        "title": "title",
+        "first_name": "peeter",
+        "sur_name": "rabin",
+        "department": "helth department",
+        "function": "my function",
+        "telephone": "+4940428380",
+        "cellphone": "+4940428380",
+        "company": "Byte Tech Pro Solutions",
+        "additive": "pass",
+        "street": " Altstadt",
+        "house_number": "235",
+        "zip": "20095",
+        "place": "Sankt Jakobikirche",
+        "phone": "+4940428380",
+        "homepage": "http://hddfmu.rf.gd/",
+        "vat": "DE316445007",
+        "mail": "nsahu@gmail.com",
+        "password": "Byte@123",
+        "repeat_password": "Byte@123"
+    },
+    "timospech": {
+        "name": "https://linktr.ee/timo.specht",
+        "first_name": "Peeter",
+        "last_name": "Rabin",
+        "email": "softlezy@gmail.com",
+        "website": "http://hddfmu.rf.gd/",
+        "phone": "+4940428380",
+        "budget": "//*[@id='budget-2b6be825-0415-4ec8-b4f6-6cc535ee019c']/option[3]",
+        "help": "",
+        "project": "",
+        "information": "Byte Tech Pro Solutions"
+    },
+    "gRecap": {
+        "name": "https://www.google.com/recaptcha/api2/demo"
+    },
+    "stadtbranchenbuch": {
+        "name": "https://www.stadtbranchenbuch.com/",
+        "company_name": "Byte Tech Pro Solutions",
+        "branch": "Apotheke",
+        "street": "Altstadt",
+        "post_code": "20095",
+        "place": "Germany",
+        "telephone": "+4940428380",
+        "email": "softlezy@gmail.com",
+        "website": "http://hddfmu.rf.gd/",
+        "gender": "Herr",
+        "contact": "Peter Rabin"
+    },
+    "wheelmap": {
+        "name": "https://wheelmap.org/",
+        "c_first_name": "Peeter",
+        "c_last_name": "Rabin",
+        "c_email": "softlezy@gmail.com",
+        "c_message": "all good",
+        "first_name": "Peeter",
+        "last_name": "Rabin",
+        "email": "softlezy@gmail.com",
+        "app": "android",
+        "system": "ok",
+        "version": "5.6",
+        "Fehlermeldung": "Fehlermeldung tested well",
+        "ort": "ort tested well",
+        "gemacht": "gemacht tested well",
+        "passiert": "passiert tested well]",
+        "stattdessen": "stattdessen tested well"
+    },
+    "onlinestreet": {
+        "name": "https://onlinestreet.de",
+        "website": "https://wheelmap.org/",
+        "first_name": "Peeter",
+        "sur_name": "Rabin",
+        "email1": "testmail@leadpaka.de",
+        "email": "softlezy@gmail.com",
+        "subject": "verify email",
+        "title": "Byte Tech Pro Solutions",
+        "description": "all are ok still tested",
+        "road": "Altstadt",
+        "house_number": "235",
+        "zip": "20095",
+        "place": "Germany",
+        "telephone": "+4940428380",
+        "main_catagory1": "catagory 1",
+        "main_catagory2": "catagory 2"
+    },
+    "gutefrage": {
+        "name": "https://www.gutefrage.net/frage/entruempelung-berlin#answer-332545202"
+    },
+    "heimwerker": {
+        "name": "https://www.heimwerker.de/"
+    },
+    "kennstDuEinen": {
+        "name": "https://www.kennstdueinen.de",
+        "first_name": "Rabin",
+        "sur_name": "Peeter",
+        "zip": "20095",
+        "city": "Germany",
+        "email": "leazyrabin@gmail.com",
+        "email1": "testmail@leadpaka.de",
+        "subject": "Ihre Registrierung auf KennstDuEinen.de",
+        "password": "Byte@123",
+        "confirm_password": "Byte@123"
+    },
+    "kooimo": {
+        "name": "https://koomio.com",
+        "user_name": "ByteProTech",
+        "email": "softlezy@gmail.com",
+        "password": "Byte@123",
+        "login_pass": "Byte@123"
+    },
+    "newdy": {
+        "name": "http://www.newdy.org/",
+        "category": "value3",
+        "url": "https://koomio.com",
+        "title": "Health Disease Detection",
+        "description": "This website about health",
+        "email": "softlezy@gmail.com"
+    },
+    "unsplash": {
+        "name": "https://unsplash.com/",
+        "first_name": "Peeter",
+        "last_name": "Rabin",
+        "user_name": "ByteRabin",
+        "email": "softlezy@gmail.com",
+        "password": "Byte@123"
+    },
+    "gust": {
+        "name": "https://gust.com/companies/seomuenchen2",
+        "first_name": "Peeter",
+        "last_name": "Rabin",
+        "email": "softlezy@gmail.com",
+        "password": "Byte@123",
+        "enter_location": "Germany",
+        "primary_email": "softlezy@gmail.com",
+        "confirm_password": "Byte@123",
+        "acclerator_name": "Peeter Rabin",
+        "website": "http://hdd.rf.gd",
+        "tagline": "health Disease Detect",
+        "description": "all good, all well",
+        "enter_profile_locations": "Genmany",
+        "enter_industry": "health"
     }
 }

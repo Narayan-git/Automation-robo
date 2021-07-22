@@ -1,16 +1,24 @@
 import imaplib
 import email
 
+from bs4 import BeautifulSoup
+from lxml import etree
+# import requests
+
 host = 'w0174d79.kasserver.com'
 username = '@leadpaka.de'
 password = 'vQDZKq5md99xLDef'
 
 
-def get_inbox():
+def get_inbox(sender_mail_id = None, subject = None):
     mail = imaplib.IMAP4_SSL(host)
     mail.login(username, password)
     mail.select("inbox")
-    _, search_data = mail.search(None, 'ALL')
+    #_, search_data = mail.search(None, 'TO "qwert@leadpaka.de"')
+    if (subject):
+        _, search_data = mail.search(None, f'TO "{sender_mail_id}" SUBJECT "{subject}"')
+    else:
+        _, search_data = mail.search(None,f'TO "{sender_mail_id}"')
     my_message = []
     for num in search_data[0].split():
         email_data = {}
@@ -19,7 +27,7 @@ def get_inbox():
         _, b = data[0]
         email_message = email.message_from_bytes(b)
         for header in ['subject', 'to', 'from', 'date']:
-            print("{}: {}".format(header, email_message[header]))
+            #print("{}: {}".format(header, email_message[header]))
             email_data[header] = email_message[header]
         for part in email_message.walk():
             if part.get_content_type() == "text/plain":
@@ -31,7 +39,7 @@ def get_inbox():
                 html_body = part.get_payload(decode=True)
                 email_data['html_body'] = html_body.decode(encoding=charset, errors="ignore")
         my_message.append(email_data)
-    return my_message
+    return my_message[0]
 
 
 def get_message_by_subject_mail(email_subject ,  email):
@@ -45,12 +53,66 @@ def get_message_by_subject_mail(email_subject ,  email):
                 print(each_mail['subject'])
 
 
+def html_processing(data):
+    from bs4 import BeautifulSoup
+    soup = BeautifulSoup(f"{data}")
+    soup.find()
 
-if __name__ == "__main__":
-    # my_inbox = get_inbox()
+    soup = BeautifulSoup(data, "html.parser")
+    dom = etree.HTML(str(soup))
+    
+    return dom.xpath('//a')[0].get("href")
+
+def get_subject(sender_mail_id, subject = None):
+    mail = imaplib.IMAP4_SSL(host)
+    mail.login(username, password)
+    mail.select("inbox")
+    #_, search_data = mail.search(None, 'TO "qwert@leadpaka.de"')
+    if (subject):
+        _, search_data = mail.search(None, f'TO "{sender_mail_id}" SUBJECT "{subject}"')
+    else:
+        _, search_data = mail.search(None,f'TO "{sender_mail_id}"')
+    my_message = []
+    for num in search_data[0].split():
+        email_data = {}
+        _, data = mail.fetch(num, '(RFC822)')
+        # print(data[0])
+        _, b = data[0]
+        email_message = email.message_from_bytes(b)
+        for header in ['subject', 'to', 'from', 'date']:
+            #print("{}: {}".format(header, email_message[header]))
+            email_data[header] = email_message[header]
+        for part in email_message.walk():
+            if part.get_content_type() == "text/plain":
+                charset = part.get_content_charset()
+                body = part.get_payload(decode=True)
+                email_data['body'] = body.decode(encoding=charset, errors="ignore")
+            elif part.get_content_type() == "text/html":
+                charset = part.get_content_charset()
+                html_body = part.get_payload(decode=True)
+                email_data['html_body'] = html_body.decode(encoding=charset, errors="ignore")
+        my_message.append(email_data)
+    return my_message[-1]["subject"]
+
+
+
+def get_mail_verification_link(email_id = None, multi_flag = None,subject = None):
+    # email_id = "testmail@leadpaka.de"
+    subject = get_subject(email_id)
+
+    my_inbox = get_inbox(sender_mail_id = email_id, subject = subject)
+
     # print(my_inbox)
-    get_message_by_subject_mail("Please Verify Your Email" , "baap1@leadpaka.de")
-# print(search_data)
 
+    key = my_inbox["html_body"]
+    # print(key)
+    hrf_link = html_processing(key)
+    # print(f"mail verification Link{hrf_link}")
+    return hrf_link
+    
 
+# verification_link = get_mail_verification_link(email_id="testmailrabin@leadpaka.de")
+# print(verification_link)
 
+# #find subject
+# subject = get_subject(sender_mail_id="testmail@leadpaka.de")
